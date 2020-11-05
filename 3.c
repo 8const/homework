@@ -34,15 +34,15 @@ u8 main(void)
                 strcpy(w[i], a[i]);
         free(a);
 
+       puts("Printing one by one:");
+        for (u8 i = 0; i < WORDS; i++) 
+                        puts(*(w + i));
         /* reversing even odd words */
         for (u8 i = 0; i < WORDS; i++) {
                 if (i % 2)
                         strrev(w[i]);
         }
-        puts("Printing one by one:");
-        for (u8 i = 0; i < WORDS; i++) 
-                        puts(*(w + i));
-
+ 
         // a new char array; 
         char *sentence = malloc(2 * WORDS * L * sizeof(char));
         sentence[0] = 0;

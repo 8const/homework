@@ -41,6 +41,7 @@ u8 main(void)
         // a new char array; 
         char *sentence = malloc(2 * WORDS * L * sizeof(char));
         sentence[0] = 0;
+
         /*
          * putting words back in the same sentence in order
          * to highlight the existantial nature of our existance;
