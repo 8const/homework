@@ -1,7 +1,7 @@
 #include "words.h"
 /* u8 stands for unsigned 8 bit integer from stdint.h; it's renamed uint8_t; */
 
-u8 main(void)
+int main(void)
 {
         /* LEN is number of bytes in input string; */
         const u8 LEN = 255; 
